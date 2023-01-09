@@ -1,4 +1,4 @@
-package com.med.voll.model.entity.enums;
+package com.med.voll.model.enums;
 
 public enum Especialidade {
 

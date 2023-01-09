@@ -1,7 +1,7 @@
 package com.med.voll.model.entity;
 
-import com.med.voll.model.entity.enums.Especialidade;
-import com.med.voll.model.entity.records.MedicoRecord;
+import com.med.voll.model.enums.Especialidade;
+import com.med.voll.model.records.MedicoRecord;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

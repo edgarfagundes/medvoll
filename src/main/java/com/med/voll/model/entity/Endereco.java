@@ -1,6 +1,6 @@
 package com.med.voll.model.entity;
 
-import com.med.voll.model.entity.records.DadosEndereco;
+import com.med.voll.model.records.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

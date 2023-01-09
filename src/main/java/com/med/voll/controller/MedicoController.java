@@ -1,7 +1,7 @@
 package com.med.voll.controller;
 
 import com.med.voll.model.entity.Medico;
-import com.med.voll.model.entity.records.MedicoRecord;
+import com.med.voll.model.records.MedicoRecord;
 import com.med.voll.model.repository.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
