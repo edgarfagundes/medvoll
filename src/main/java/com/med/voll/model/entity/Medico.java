@@ -1,6 +1,7 @@
 package com.med.voll.model.entity;
 
 import com.med.voll.model.enums.Especialidade;
+import com.med.voll.model.records.DadosAtualizarMedico;
 import com.med.voll.model.records.MedicoRecord;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -23,6 +24,7 @@ public class Medico extends IdGenerator{
     private Especialidade especialidade;
     @Embedded
     private Endereco endereco;
+    private boolean ativo = true;
 
     public Medico(MedicoRecord medico) {
         this.nome = medico.nome();
@@ -30,5 +32,15 @@ public class Medico extends IdGenerator{
         this.crm = medico.crm();
         this.especialidade = medico.especialidade();
         this.endereco = new Endereco(medico.endereco());
+    }
+
+    public void atualizarMedico(DadosAtualizarMedico dados){
+        this.setId(dados.id()) ;
+        this.nome = dados.nome();
+        this.email = dados.email();
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 }
